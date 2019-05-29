@@ -14,7 +14,7 @@ import com.example.weatherapp.entities.Wind
  * @author Dostonbek Kamalov (aka @ddk9499)
  */
 
-fun Wind.toDirection(context: Context): Direction =
+fun Wind.toDirection(): Direction =
 	when (this.degree.substringBefore('.').toInt()) {
 		in 0..22, in 337..360 -> Direction(R.string.azimuth_n, R.drawable.ic_azimuth_n)
 		in 23..67 -> Direction(R.string.azimuth_ne, R.drawable.ic_azimuth_ne)

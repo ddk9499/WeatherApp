@@ -57,7 +57,7 @@ class DetailDialog : BottomSheetDialogFragment() {
 		detail_temp_tv.text = weatherData.temperature.toCelsius(requireContext())
 		detail_weather_iv.loadWeatherIcon(weatherData.weather.first().icon)
 		detail_humidity_tv.text = "${weatherData.temperature.humidity}%"
-		val direction = weatherData.wind.toDirection(requireContext())
+		val direction = weatherData.wind.toDirection()
 		detail_wind_tv.text = "${weatherData.wind.speed} m/s, ${getString(direction.title)}"
 		detail_wind_iv.setImageResource(direction.icon)
 		detail_pressure_tv.text = "${weatherData.temperature.pressure} mb"
