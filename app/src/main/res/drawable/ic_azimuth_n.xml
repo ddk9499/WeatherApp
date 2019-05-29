@@ -1,0 +1,9 @@
+<vector android:height="24dp"
+	android:viewportHeight="1024"
+	android:viewportWidth="1024"
+	android:width="24dp"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<path
+		android:fillColor="@color/color_azimuth_icon"
+		android:pathData="M469.33,170.67 L554.67,170.67 554.67,682.67 789.33,448 849.92,508.59 512,846.51 174.08,508.59 234.67,448 469.33,682.67 469.33,170.67Z" />
+</vector>

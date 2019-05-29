@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="60dp"
+	android:layout_margin="8dp"
+	android:background="@drawable/rectangle_black_border_background"
+	android:padding="8dp">
+
+	<TextView
+		android:id="@+id/city_name_tv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toStartOf="@id/weather_icon"
+		android:textColor="@android:color/black"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		tools:text="Moscow" />
+
+	<ImageView
+		android:id="@+id/weather_icon"
+		android:layout_width="55dp"
+		android:layout_height="55dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_toStartOf="@id/temperature_tv"
+		tools:src="@drawable/ic_weather_error" />
+
+	<TextView
+		android:id="@+id/temperature_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_centerVertical="true"
+		android:textColor="@android:color/black"
+		android:textSize="20sp"
+		tools:text="+18°" />
+
+</RelativeLayout>

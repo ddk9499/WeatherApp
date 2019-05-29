@@ -1,0 +1,15 @@
+# Build files and folders
+.gradle/
+build/
+keys/
+
+# Properties
+local.properties
+koin.properties
+
+# Idea
+.idea/
+**/*.iml
+
+# Mac OS
+.DS_Store
